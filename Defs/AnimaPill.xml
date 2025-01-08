@@ -13,12 +13,11 @@
 		<graphicData>
 			<texPath>Pills/AnimaPill</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
-			<drawSize>0.88</drawSize>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<statBases>
 			<WorkToMake>900</WorkToMake>
-			<MarketValue>100</MarketValue>
+			<MarketValue>80</MarketValue>
 			<Mass>0.01</Mass>
 		</statBases>
 		<techLevel>Neolithic</techLevel>
@@ -36,56 +35,28 @@
 			<ingestCommandString>Consume {0}</ingestCommandString>
 			<ingestReportString>Consuming {0}.</ingestReportString>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AnimaHigh</hediffDef>
-					<severity>0.5</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>PsychicallyAnimated</hediffDef>
-					<severity>0.5</severity>
+				<li>
+					<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
+					<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+					<li Class="IngestionOutcomeDoer_GiveHediff">
+						<hediffDef>AnimaHigh</hediffDef>
+						<severity>0.5</severity>
+					</li>
+					<li Class="IngestionOutcomeDoer_GiveHediff">
+						<hediffDef>PsychicallyAnimated</hediffDef>
+						<severity>0.5</severity>
+					</li>
+					<li Class="IngestionOutcomeDoer_OffsetNeed">
+						<need>Rest</need>
+						<offset>-0.1</offset>
+					</li>
+					<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+						<offset>0.2</offset>
+					</li>
 				</li>
 			</outcomeDoers>
 		</ingestible>
-	
-		<HediffDef>
-			<defName>PsychicallyAnimated</defName>
-			<label>psychically animated</label>
-			<labelNoun>an anima induced psychic power-up</labelNoun>
-			<description>Pure psychic energy course through the body and mind.</description>
-			<hediffClass>Hediff_High</hediffClass>
-			<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-			<scenarioCanAdd>true</scenarioCanAdd>
-			<maxSeverity>1.0</maxSeverity>
-			<isBad>false</isBad>
-			<comps>
-				<li Class="HediffCompProperties_SeverityPerDay">
-					<severityPerDay>-2.0</severityPerDay>
-					<showHoursToRecover>true</showHoursToRecover>
-				</li>
-			</comps>
-			<stages>
-				<li>
-					<statOffsets>
-						<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
-						<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
-						<li Class="IngestionOutcomeDoer_OffsetNeed">
-							<need>Rest</need>
-							<offset>-0.1</offset>
-						</li>
-						<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-							<offset>0.2</offset>
-						</li>
-						<capMods>
-						<li>
-							<capacity>Consciousness</capacity>
-							<offset>0.2</offset>
-						</li>
-						</capMods>
-					</statOffsets>
-				</li>
-			</stages>
-		</HediffDef>
-	
+		
 		<recipeMaker>
 			<researchPrerequisite>AnimaDrugs</researchPrerequisite>
 			<recipeUsers>
@@ -95,26 +66,73 @@
 				<li>DrugLab</li>
 			</recipeUsers>
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
+			<workSkill>Cooking</workSkill>
 			<skillRequirements>
-				<Crafting>8</Crafting>
+				<Cooking>2</Cooking>
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<AnimaFiber>20</AnimaFiber>
 			<PsychoidLeaves>5</PsychoidLeaves>
+			<Gold>2</Gold>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>EF_Anima</chemical>
 				<addictiveness>0.01</addictiveness>
 				<minToleranceToAddict>1</minToleranceToAddict>
-				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
 				<needLevelOffset>0.9</needLevelOffset>
 				<listOrder>20</listOrder>
 			</li>
 		</comps>
 	</ThingDef>
+	
+	
+	<HediffDef>
+		<defName>PsychicallyAnimated</defName>
+		<label>psychically animated</label>
+		<labelNoun>an anima induced psychic power-up</labelNoun>
+		<description>Pure psychic energy course through the body and mind.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.70</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
 
 </Defs>
