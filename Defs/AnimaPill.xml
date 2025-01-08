@@ -11,7 +11,7 @@
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>AnimaPill1</texPath>
+			<texPath>Pills/AnimaPill1</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>0.88</drawSize>
 		</graphicData>
