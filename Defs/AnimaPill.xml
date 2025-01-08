@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>AnimaPill</defName>
+		<label>anima pill</label>
+		<description>A round pill refined from concentrated anima fiber extract.This pill contains pure digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Very useful for psycasters.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AnimaHigh</HediffDef>
+			<ThingDef>AnimaFiber</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>AnimaPill1</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.88</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>900</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>0.01</Mass>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<tradeTags>
+			<li>AnimaDrug</li>
+		</tradeTags>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.80</joy>
+			<baseIngestTicks>210</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Medical</drugCategory>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Consume {0}</ingestCommandString>
+			<ingestReportString>Consuming {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AnimaHigh</hediffDef>
+					<severity>0.5</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>-0.1</offset>
+					<toleranceChemical>AnimaPill</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.2</offset>
+				</li>
+				<statOffsets>
+					<PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
+					<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+				</statOffsets>
+			</outcomeDoers>
+		</ingestible>
+	
+		<HediffDef>
+			<defName>VBE_DeluxeTobaccoHigh</defName>
+			<label>high-quality tobacco high</label>
+			<labelNoun>a high-quality tobacco high</labelNoun>
+			<description>Nicotine in the bloodstream. Generates a soft feeling of fuzzy well-being.</description>
+			<hediffClass>Hediff_High</hediffClass>
+			<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+			<scenarioCanAdd>true</scenarioCanAdd>
+			<maxSeverity>1.0</maxSeverity>
+			<isBad>false</isBad>
+			<comps>
+				<li Class="HediffCompProperties_SeverityPerDay">
+					<severityPerDay>-2.0</severityPerDay>
+					<showHoursToRecover>true</showHoursToRecover>
+				</li>
+			</comps>
+			<stages>
+				<li>
+					<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
+          
+					<capMods>
+						<li>
+							<capacity>Consciousness</capacity>
+							<offset>0.2</offset>
+						</li>
+           
+					</capMods>
+				</li>
+			</stages>
+		</HediffDef>
+	
+		<recipeMaker>
+			<researchPrerequisite>AnimaDrugs</researchPrerequisite>
+			<recipeUsers>
+				<li>Campfire</li>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<AnimaFiber>20</AnimaFiber>
+			<PsychoidLeaves>5</PsychoidLeaves>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>EF_Anima</chemical>
+				<addictiveness>0.01</addictiveness>
+				<minToleranceToAddict>1</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

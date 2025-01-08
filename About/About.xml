@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Elders Faction AddOn - Psychic Drugs</name>
+	<author>TM3</author>
+	<supportedVersions>
+        <li>1.2</li>
+		<li>1.3</li>
+		<li>1.4</li>
+		<li>1.5</li>
+    </supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+	    <li>
+			<packageId>xrushha.AnimaGear</packageId>
+			<displayName>AnimaGear</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2215217049</downloadUrl>
+		</li>
+		<li>
+			<packageId>xrushha.EldersFaction</packageId>
+			<displayName>Elders Faction</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=22828671409</downloadUrl>
+		</li>
+    </modDependencies>
+	<loadAfter>
+		<li>xrushha.AnimaGear</li>
+		<li>xrushha.EldersFaction</li>
+	</loadAfter>
+<packageId>tm3.EldersFactionAddOnPsychicDrugs</packageId>
+  <description>This is an AddOn for the great mod "Elders Faction" by xrushha. 
+  It is a hard dependency as it uses the farmable anima fibers for the drug recipes. 
+  This is my first try at modding with a shallow programming knowledge at best, so any constructive feedback is welcome. Needless to say it is a work in progress.
+  Enjoy! - Peace</description>
+</ModMetaData>
