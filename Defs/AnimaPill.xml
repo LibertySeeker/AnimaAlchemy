@@ -6,7 +6,6 @@
 		<label>anima pill</label>
 		<description>A round pill refined from concentrated anima fiber extract.This pill contains pure digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Very useful for psycasters.</description>
 		<descriptionHyperlinks>
-			<HediffDef>PsychicallyAnimated</HediffDef>
 			<HediffDef>AnimaHigh</HediffDef>
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
@@ -40,10 +39,6 @@
 					<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
 					<li Class="IngestionOutcomeDoer_GiveHediff">
 						<hediffDef>AnimaHigh</hediffDef>
-						<severity>0.5</severity>
-					</li>
-					<li Class="IngestionOutcomeDoer_GiveHediff">
-						<hediffDef>PsychicallyAnimated</hediffDef>
 						<severity>0.5</severity>
 					</li>
 					<li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -88,51 +83,5 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-	
-	<HediffDef>
-		<defName>PsychicallyAnimated</defName>
-		<label>psychically animated</label>
-		<labelNoun>an anima induced psychic power-up</labelNoun>
-		<description>Pure psychic energy course through the body and mind.</description>
-		<hediffClass>Hediff_High</hediffClass>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<scenarioCanAdd>true</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>
-		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-2.0</severityPerDay>
-				<showHoursToRecover>true</showHoursToRecover>
-			</li>
-		</comps>
-		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>0.15</offset>
-					</li>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>0.05</offset>
-					</li>
-					<li>
-						<capacity>Sight</capacity>
-						<offset>0.15</offset>
-					</li>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>0.70</offset>
-					</li>
-					<li>
-						<capacity>BloodPumping</capacity>
-						<offset>0.15</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-	</HediffDef>
-
 
 </Defs>
