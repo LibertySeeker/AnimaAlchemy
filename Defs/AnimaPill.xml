@@ -71,7 +71,6 @@
 						<li Class="IngestionOutcomeDoer_OffsetNeed">
 							<need>Rest</need>
 							<offset>-0.1</offset>
-							<toleranceChemical>AnimaPill</toleranceChemical>
 						</li>
 						<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
 							<offset>0.2</offset>
