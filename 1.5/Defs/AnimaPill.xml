@@ -10,12 +10,12 @@
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Pills/AnimaPill</texPath>
+			<texPath>AnimaPill</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<statBases>
-			<WorkToMake>900</WorkToMake>
+			<WorkToMake>500</WorkToMake>
 			<MarketValue>80</MarketValue>
 			<Mass>0.01</Mass>
 		</statBases>
@@ -34,20 +34,18 @@
 			<ingestCommandString>Consume {0}</ingestCommandString>
 			<ingestReportString>Consuming {0}.</ingestReportString>
 			<outcomeDoers>
-				<li>
-					<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
-					<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
-					<li Class="IngestionOutcomeDoer_GiveHediff">
-						<hediffDef>AnimaHigh</hediffDef>
-						<severity>0.5</severity>
-					</li>
-					<li Class="IngestionOutcomeDoer_OffsetNeed">
-						<need>Rest</need>
-						<offset>-0.1</offset>
-					</li>
-					<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-						<offset>0.2</offset>
-					</li>
+				<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
+				<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AnimaHigh</hediffDef>
+					<severity>0.5</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>-0.1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.2</offset>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -70,7 +68,7 @@
 		<costList>
 			<AnimaFiber>20</AnimaFiber>
 			<PsychoidLeaves>5</PsychoidLeaves>
-			<Gold>2</Gold>
+			<Gold>0.2</Gold>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Drug">
