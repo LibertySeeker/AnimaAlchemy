@@ -6,8 +6,7 @@
 		<label>anima golden pill</label>
 		<description>An advanced version of the anima pill. It replenishes more psychic focus and provides better psychic boost. Very useful for psycasters in critical situations.</description>
 		<descriptionHyperlinks>
-			<HediffDef>AnimaPillHigh</HediffDef>
-			<HediffDef>EF_AnimaAddiction</HediffDef>
+			<HediffDef>AnimaGoldenPillHigh</HediffDef>
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
@@ -36,7 +35,7 @@
 			<ingestReportString>Consuming {0}.</ingestReportString>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AnimaPillHigh</hediffDef>
+					<hediffDef>AnimaGoldenPillHigh</hediffDef>
 					<severity>1.0</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -67,7 +66,7 @@
 			<AnimaFiber>50</AnimaFiber>
 			<PsychoidLeaves>20</PsychoidLeaves>
 			<Ambrosia>2</Ambrosia>
-			<Gold>1</Gold>
+			<Gold>10</Gold>
 		</costList>
 		
 		<comps>
