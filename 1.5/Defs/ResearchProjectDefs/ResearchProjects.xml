@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ResearchProjectDef>
-    <defName>AnimaDrugs</defName>
-    <label>Anima drugs</label>
-    <description>Learn how to produce drugs from anima fibers.</description>
-    <baseCost>800</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>1.00</researchViewY>
-  </ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>AnimaAlchemy</defName>
+		<label>Anima alchemy</label>
+		<description>Learn how to produce potions and pills from anima fibers.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+		<prerequisites>
+			<li>AnimaDrugs</li>
+		</prerequisites>
+	</ResearchProjectDef>
 </Defs>

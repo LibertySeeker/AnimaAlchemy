@@ -37,20 +37,20 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AnimaPillHigh</hediffDef>
-					<severity>0.5</severity>
+					<severity>1.0</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>
-					<offset>-0.25</offset>
+					<offset>0.25</offset>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-					<offset>0.45</offset>
+					<offset>0.5</offset>
 				</li>
 			</outcomeDoers>
 		</ingestible>
 		
 		<recipeMaker>
-			<researchPrerequisite>AnimaDrugs</researchPrerequisite>
+			<researchPrerequisite>AnimaAlchemy</researchPrerequisite>
 			<recipeUsers>
 				<li>Campfire</li>
 				<li>ElectricStove</li>
@@ -58,16 +58,15 @@
 				<li>DrugLab</li>
 			</recipeUsers>
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
-			<workSkill>Cooking</workSkill>
 			<skillRequirements>
-				<Cooking>2</Cooking>
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
 		
 		<costList>
 			<AnimaFiber>50</AnimaFiber>
-			<PsychoidLeaves>12</PsychoidLeaves>
+			<PsychoidLeaves>20</PsychoidLeaves>
+			<Ambrosia>2</Ambrosia>
 			<Gold>1</Gold>
 		</costList>
 		

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
+	<!--Anima Pill-->
     <HediffDef>
 		<defName>AnimaPillHigh</defName>
 		<label>high on anima pill</label>
-		<labelNoun>an anima tea high</labelNoun>
+		<labelNoun>an anima pill high</labelNoun>
 		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
@@ -36,6 +37,47 @@
 			<li>
 				<label>consumed anima pill</label>
 				<description>I feel so connected with nature and the world and full of energy.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!--Anima Golden Pill-->
+	<HediffDef>
+		<defName>AnimaGoldenPillHigh</defName>
+		<label>high on golden anima pill</label>
+		<labelNoun>an anima golden pill high</labelNoun>
+		<description>Active pure anima energy in body and mind. Regenerates half the Psyfocus and boosts other psychic attributes.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<PsychicSensitivityOffset>0.8</PsychicSensitivityOffset>
+					<PsychicEntropyRecoveryRate>0.8</PsychicEntropyRecoveryRate>
+					<hungerRateFactorOffset>-0.2</hungerRateFactorOffset>
+				</statOffsets>
+			</li>
+		 </stages>
+	</HediffDef>
+  
+    <ThoughtDef>
+		<defName>AnimaGoldenPillHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AnimaGoldenPillHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>consumed golden anima pill</label>
+				<description>I feel one with nature and the world. I can do anything!</description>
 				<baseMoodEffect>25</baseMoodEffect>
 			</li>
 		</stages>
