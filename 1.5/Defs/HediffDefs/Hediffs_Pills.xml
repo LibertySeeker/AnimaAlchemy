@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+    <HediffDef>
+		<defName>AnimaPillHigh</defName>
+		<label>high on anima pill</label>
+		<labelNoun>an anima tea high</labelNoun>
+		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
+					<PsychicEntropyRecoveryRate>0.4</PsychicEntropyRecoveryRate>
+					<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
+				</statOffsets>
+			</li>
+		 </stages>
+	</HediffDef>
+  
+    <ThoughtDef>
+		<defName>AnimaPillHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AnimaPillHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>consumed anima pill</label>
+				<description>I feel so connected with nature and the world and full of energy.</description>
+				<baseMoodEffect>25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+</Defs>

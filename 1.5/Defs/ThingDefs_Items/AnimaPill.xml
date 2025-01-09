@@ -4,9 +4,10 @@
 	<ThingDef ParentName="MakeableDrugBase">
 		<defName>AnimaPill</defName>
 		<label>anima pill</label>
-		<description>A round pill refined from concentrated anima fiber extract.This pill contains pure digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Very useful for psycasters.</description>
+		<description>A round pill refined from concentrated anima fiber extract. This pill contains instant digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Very useful for psycasters.</description>
 		<descriptionHyperlinks>
-			<HediffDef>AnimaHigh</HediffDef>
+			<HediffDef>AnimaPillHigh</HediffDef>
+			<HediffDef>EF_AnimaAddiction</HediffDef>
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
@@ -34,11 +35,9 @@
 			<ingestCommandString>Consume {0}</ingestCommandString>
 			<ingestReportString>Consuming {0}.</ingestReportString>
 			<outcomeDoers>
-				<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
-				<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AnimaHigh</hediffDef>
-					<severity>0.5</severity>
+					<hediffDef>AnimaPillHigh</hediffDef>
+					<severity>0.33</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>
@@ -65,11 +64,13 @@
 				<Intellectual>8</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
+		
 		<costList>
 			<AnimaFiber>20</AnimaFiber>
 			<PsychoidLeaves>5</PsychoidLeaves>
 			<Gold>0.2</Gold>
 		</costList>
+		
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>EF_Anima</chemical>
@@ -80,6 +81,7 @@
 				<listOrder>20</listOrder>
 			</li>
 		</comps>
+		
 	</ThingDef>
 
 </Defs>

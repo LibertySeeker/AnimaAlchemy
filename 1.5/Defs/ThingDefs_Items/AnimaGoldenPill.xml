@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>AnimaGoldenPill</defName>
+		<label>anima golden pill</label>
+		<description>An advanced version of the anima pill. It replenishes more psychic focus and provides better psychic boost. Very useful for psycasters in critical situations.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AnimaPillHigh</HediffDef>
+			<HediffDef>EF_AnimaAddiction</HediffDef>
+			<ThingDef>AnimaFiber</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>AnimaGoldenPill</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>180</MarketValue>
+			<Mass>0.01</Mass>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<tradeTags>
+			<li>AnimaDrug</li>
+		</tradeTags>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.90</joy>
+			<baseIngestTicks>210</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Medical</drugCategory>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Consume {0}</ingestCommandString>
+			<ingestReportString>Consuming {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AnimaPillHigh</hediffDef>
+					<severity>0.5</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>-0.25</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.45</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		
+		<recipeMaker>
+			<researchPrerequisite>AnimaDrugs</researchPrerequisite>
+			<recipeUsers>
+				<li>Campfire</li>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<skillRequirements>
+				<Cooking>2</Cooking>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		
+		<costList>
+			<AnimaFiber>50</AnimaFiber>
+			<PsychoidLeaves>12</PsychoidLeaves>
+			<Gold>1</Gold>
+		</costList>
+		
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>EF_Anima</chemical>
+				<addictiveness>0.01</addictiveness>
+				<minToleranceToAddict>1</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+		
+	</ThingDef>
+
+</Defs>

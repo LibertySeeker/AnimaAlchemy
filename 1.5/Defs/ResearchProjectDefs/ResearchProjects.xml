@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>AnimaDrugs</defName>
+    <label>Anima drugs</label>
+    <description>Learn how to produce drugs from anima fibers.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+</Defs>
