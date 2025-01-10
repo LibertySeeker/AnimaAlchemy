@@ -1,8 +1,8 @@
 
 # Anima Alchemy  
 
-This is an AddOn for the great mod "Elders Faction" by xrushha.  
-It is a hard dependency as it uses the farmable anima fibers for the drug recipes.   
+This mod started as an Add-on for the great mod "Elders Faction" by xrushha. 
+Now it only requires "Anima Gear" as a dependency as it uses the farmable anima fibers for the drug recipes.
 
 ## Content
 Added two new drugs that replenish psyfocus and boost psychic attributes :
