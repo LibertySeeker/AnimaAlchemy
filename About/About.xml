@@ -19,15 +19,9 @@
 			<displayName>AnimaGear</displayName>
 			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2215217049</downloadUrl>
 		</li>
-		<li>
-			<packageId>xrushha.EldersFaction</packageId>
-			<displayName>Elders Faction</displayName>
-			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=22828671409</downloadUrl>
-		</li>
     	</modDependencies>
 	<loadAfter>
 		<li>xrushha.AnimaGear</li>
-		<li>xrushha.EldersFaction</li>
 	</loadAfter>
 	<packageId>tm3.EldersFactionAddOnAnimaAlchemy</packageId>
   	<description>This is an Add-on for the great mod "Elders Faction" by xrushha. 
