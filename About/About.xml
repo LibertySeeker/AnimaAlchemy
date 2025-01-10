@@ -19,13 +19,20 @@
 			<displayName>AnimaGear</displayName>
 			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2215217049</downloadUrl>
 		</li>
+		<li>
+			<packageId>xrushha.EldersFaction</packageId>
+			<displayName>Elders Faction</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2282867140</downloadUrl>
+		
+		</li>
     	</modDependencies>
 	<loadAfter>
 		<li>xrushha.AnimaGear</li>
+		<li>xrushha.EldersFaction</li>
 	</loadAfter>
 	<packageId>tm3.AnimaAlchemy</packageId>
   	<description>This mod started as an Add-on for the great mod "Elders Faction" by xrushha. 
-  	Now it only requires "Anima Gear" as a dependency as it uses the farmable anima fibers for the drug recipes. 
+  	It also requires "Anima Gear" as a dependency as it uses the farmable anima fibers for the drug recipes. 
   	This is my first try at modding with a shallow programming knowledge at best, so any constructive feedback is welcome. Needless to say it is a work in progress.
   	Enjoy! - Peace</description>
 </ModMetaData>
