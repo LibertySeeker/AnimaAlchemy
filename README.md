@@ -1,5 +1,5 @@
 
-# Elders Faction AddOn : Anima Alchemy  
+# Anima Alchemy  
 
 This is an AddOn for the great mod "Elders Faction" by xrushha.  
 It is a hard dependency as it uses the farmable anima fibers for the drug recipes.   
