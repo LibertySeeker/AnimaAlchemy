@@ -20,9 +20,9 @@
 		<stages>
 			<li>
 				<statOffsets>
-						<PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
-						<PsychicEntropyRecoveryRate>0.4</PsychicEntropyRecoveryRate>
-						<!--<VPE_PsyfocusCostFactor>0.8</VPE_PsyfocusCostFactor>-->
+					<PsychicSensitivity>0.3</PsychicSensitivity>
+					<PsychicEntropyRecoveryRate>0.4</PsychicEntropyRecoveryRate>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.8</VPE_PsyfocusCostFactor>
 				</statOffsets>
 			</li>
 		</stages>
@@ -37,7 +37,7 @@
 			<li>
 				<label>consumed anima pill</label>
 				<description>I feel so connected with nature and the world and full of energy.</description>
-				<baseMoodEffect>15</baseMoodEffect>
+				<baseMoodEffect>10</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -61,9 +61,10 @@
 		<stages>
 			<li>
 				<statOffsets>
-						<PsychicSensitivityOffset>0.8</PsychicSensitivityOffset>
-						<PsychicEntropyRecoveryRate>0.8</PsychicEntropyRecoveryRate>
-						<!--<VPE_PsyfocusCostFactor>0.5</VPE_PsyfocusCostFactor>-->
+					<MaxEntropy>2.0</MaxEntropy>
+					<PsychicSensitivity>0.8</PsychicSensitivity>
+					<PsychicEntropyRecoveryRate>0.8</PsychicEntropyRecoveryRate>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.5</VPE_PsyfocusCostFactor>
 				</statOffsets>
 			</li>
 		 </stages>
@@ -78,7 +79,7 @@
 			<li>
 				<label>consumed golden anima pill</label>
 				<description>I feel one with nature and the world. I can do anything!</description>
-				<baseMoodEffect>25</baseMoodEffect>
+				<baseMoodEffect>15</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

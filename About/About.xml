@@ -29,8 +29,9 @@
 	<loadAfter>
 		<li>xrushha.AnimaGear</li>
 		<li>xrushha.EldersFaction</li>
+		<li>VanillaExpanded.VPsycastsE</li>
 	</loadAfter>
-	<packageId>tm3.AnimaAlchemy</packageId>
+	<packageId>TM3.AnimaAlchemy</packageId>
   	<description>This mod started as an Add-on for the great mod "Elders Faction" by xrushha. 
   	It also requires "Anima Gear" as a dependency as it uses the farmable anima fibers for the drug recipes. 
   	This is my first try at modding with a shallow programming knowledge at best, so any constructive feedback is welcome. Needless to say it is a work in progress.
