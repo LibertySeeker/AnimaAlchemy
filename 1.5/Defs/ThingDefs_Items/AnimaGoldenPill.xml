@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MakeableDrugBase">
 		<defName>AnimaGoldenPill</defName>
 		<label>anima golden pill</label>
-		<description>An advanced version of the anima pill.</description>
+		<description>An advanced version of the anima pill. It replenishes more psychic focus and provides better psychic boost. Very useful for psycasters in critical situations.</description>
 		<descriptionHyperlinks>
 			<HediffDef>AnimaHigh</HediffDef>
 			<HediffDef>AnimaGoldenBoost</HediffDef>

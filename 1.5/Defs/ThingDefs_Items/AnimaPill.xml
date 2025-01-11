@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MakeableDrugBase">
 		<defName>AnimaPill</defName>
 		<label>anima pill</label>
-		<description>A round pill refined from concentrated anima fiber extract.</description>
+		<description>A round pill refined from concentrated anima fiber extract. This pill contains instant digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Very useful for psycasters.</description>
 		<descriptionHyperlinks>
 			<HediffDef>AnimaHigh</HediffDef>
 			<HediffDef>AnimaBoost</HediffDef>
