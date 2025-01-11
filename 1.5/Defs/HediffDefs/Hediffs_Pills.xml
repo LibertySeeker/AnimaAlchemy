@@ -20,11 +20,9 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<li>
 						<PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
 						<PsychicEntropyRecoveryRate>0.4</PsychicEntropyRecoveryRate>
 						<VPE_PsyfocusCostFactor>0.8</VPE_PsyfocusCostFactor>
-					</li>
 				</statOffsets>
 			</li>
 		</stages>
