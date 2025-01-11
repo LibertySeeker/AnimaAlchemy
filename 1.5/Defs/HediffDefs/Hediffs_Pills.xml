@@ -61,7 +61,6 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MaxEntropy>2.0</MaxEntropy>
 					<PsychicSensitivity>0.8</PsychicSensitivity>
 					<PsychicEntropyRecoveryRate>0.8</PsychicEntropyRecoveryRate>
 					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.5</VPE_PsyfocusCostFactor>
