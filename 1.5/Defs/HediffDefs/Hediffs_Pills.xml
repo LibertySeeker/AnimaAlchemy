@@ -3,9 +3,9 @@
 	
 	<!--Anima Pill-->
     <HediffDef>
-		<defName>AnimaPillHigh</defName>
-		<label>high on anima pill</label>
-		<labelNoun>an anima pill high</labelNoun>
+		<defName>AnimaBoost</defName>
+		<label>psychic boost from anima pill</label>
+		<labelNoun>an anima pill boost</labelNoun>
 		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
@@ -22,16 +22,16 @@
 				<statOffsets>
 						<PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
 						<PsychicEntropyRecoveryRate>0.4</PsychicEntropyRecoveryRate>
-						<VPE_PsyfocusCostFactor>0.8</VPE_PsyfocusCostFactor>
+						<!--<VPE_PsyfocusCostFactor>0.8</VPE_PsyfocusCostFactor>-->
 				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
   
     <ThoughtDef>
-		<defName>AnimaPillHigh</defName>
+		<defName>AnimaBoost</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>AnimaPillHigh</hediff>
+		<hediff>AnimaBoost</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -44,9 +44,9 @@
 
 	<!--Anima Golden Pill-->
 	<HediffDef>
-		<defName>AnimaGoldenPillHigh</defName>
-		<label>high on golden anima pill</label>
-		<labelNoun>an anima golden pill high</labelNoun>
+		<defName>AnimaGoldenBoost</defName>
+		<label>psychic boost from golden anima pill</label>
+		<labelNoun>an anima golden pill boost</labelNoun>
 		<description>Active pure anima energy in body and mind. Regenerates half the Psyfocus and boosts other psychic attributes.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
@@ -63,16 +63,16 @@
 				<statOffsets>
 						<PsychicSensitivityOffset>0.8</PsychicSensitivityOffset>
 						<PsychicEntropyRecoveryRate>0.8</PsychicEntropyRecoveryRate>
-						<VPE_PsyfocusCostFactor>0.5</VPE_PsyfocusCostFactor>
+						<!--<VPE_PsyfocusCostFactor>0.5</VPE_PsyfocusCostFactor>-->
 				</statOffsets>
 			</li>
 		 </stages>
 	</HediffDef>
   
     <ThoughtDef>
-		<defName>AnimaGoldenPillHigh</defName>
+		<defName>AnimaGoldenBoost</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>AnimaGoldenPillHigh</hediff>
+		<hediff>AnimaGoldenBoost</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>

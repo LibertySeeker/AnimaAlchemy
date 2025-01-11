@@ -4,9 +4,10 @@
 	<ThingDef ParentName="MakeableDrugBase">
 		<defName>AnimaGoldenPill</defName>
 		<label>anima golden pill</label>
-		<description>An advanced version of the anima pill. It replenishes more psychic focus and provides better psychic boost. Very useful for psycasters in critical situations.</description>
+		<description>An advanced version of the anima pill.</description>
 		<descriptionHyperlinks>
-			<HediffDef>AnimaGoldenPillHigh</HediffDef>
+			<HediffDef>AnimaHigh</HediffDef>
+			<HediffDef>AnimaGoldenBoost</HediffDef>
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
@@ -35,7 +36,8 @@
 			<ingestReportString>Consuming {0}.</ingestReportString>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AnimaGoldenPillHigh</hediffDef>
+					<HediffDef>AnimaHigh</HediffDef>
+					<HediffDef>AnimaGoldenBoost</HediffDef>
 					<severity>1.0</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
