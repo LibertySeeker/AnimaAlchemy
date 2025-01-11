@@ -19,8 +19,14 @@
 		</comps>
 		<stages>
 			<li>
+				<statFactors>
+					<MaxEntropy>1.2</MaxEntropy>
+					<PsychicSensitivity>1.2</PsychicSensitivity>
+				</statFactors>
+			</li>
+			<li>
 				<statOffsets>
-					<PsychicSensitivity>0.3</PsychicSensitivity>
+					<!--<PsychicSensitivity>0.1</PsychicSensitivity>-->
 					<PsychicEntropyRecoveryRate>0.4</PsychicEntropyRecoveryRate>
 					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.8</VPE_PsyfocusCostFactor>
 				</statOffsets>
@@ -60,9 +66,14 @@
 		</comps>
 		<stages>
 			<li>
+				<statFactors>
+					<MaxEntropy>1.5</MaxEntropy>
+					<PsychicSensitivity>1.5</PsychicSensitivity>
+				</statFactors>
+			</li>
+			<li>
 				<statOffsets>
-					<MaxEntropy>2.0</MaxEntropy>
-					<PsychicSensitivity>0.8</PsychicSensitivity>
+					<PsychicSensitivity>0.5</PsychicSensitivity>
 					<PsychicEntropyRecoveryRate>0.8</PsychicEntropyRecoveryRate>
 					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.5</VPE_PsyfocusCostFactor>
 				</statOffsets>
