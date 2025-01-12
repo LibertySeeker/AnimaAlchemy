@@ -36,11 +36,11 @@
 			<ingestReportString>Consuming {0}.</ingestReportString>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<HediffDef>AnimaHigh</HediffDef>
+					<hediffDef>AnimaHigh</hediffDef>
 					<severity>1.0</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<HediffDef>AnimaGoldenBoost</HediffDef>
+					<hediffDef>AnimaGoldenBoost</hediffDef>
 					<severity>1.0</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
