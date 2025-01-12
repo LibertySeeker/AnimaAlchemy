@@ -2,22 +2,22 @@
 <Defs>
 
 	<ThingDef ParentName="MakeableDrugBase">
-		<defName>AnimaPill</defName>
-		<label>anima pill</label>
-		<description>A round pill refined from concentrated anima fiber extract. This pill contains instant digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Very useful for psycasters.</description>
+		<defName>AnimaGoldenPill</defName>
+		<label>anima golden pill</label>
+		<description>An advanced version of the anima pill. It replenishes more psychic focus and provides better psychic boost. Very useful for psycasters in critical situations.</description>
 		<descriptionHyperlinks>
 			<HediffDef>AnimaHigh</HediffDef>
-			<HediffDef>AnimaBoost</HediffDef>
+			<HediffDef>AnimaGoldenBoost</HediffDef>
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>AnimaPill</texPath>
+			<texPath>AnimaGoldenPill</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<statBases>
-			<WorkToMake>500</WorkToMake>
-			<MarketValue>80</MarketValue>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>180</MarketValue>
 			<Mass>0.01</Mass>
 		</statBases>
 		<techLevel>Neolithic</techLevel>
@@ -27,29 +27,28 @@
 		<ingestible>
 			<foodType>Plant, Processed</foodType>
 			<joyKind>Chemical</joyKind>
-			<joy>0.80</joy>
+			<joy>0.90</joy>
 			<baseIngestTicks>210</baseIngestTicks>
 			<nurseable>true</nurseable>
 			<drugCategory>Medical</drugCategory>
-			<ingestSound>Ingest_Pill</ingestSound>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
-			<ingestCommandString>Take {0}</ingestCommandString>
-			<ingestReportString>Taking {0}.</ingestReportString>
+			<ingestCommandString>Consume {0}</ingestCommandString>
+			<ingestReportString>Consuming {0}.</ingestReportString>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AnimaHigh</hediffDef>
 					<severity>1.0</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AnimaBoost</hediffDef>
+					<hediffDef>AnimaGoldenBoost</hediffDef>
 					<severity>1.0</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>
-					<offset>0.125</offset>
+					<offset>0.25</offset>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-					<offset>0.2</offset>
+					<offset>0.5</offset>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -64,14 +63,15 @@
 			</recipeUsers>
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 			<skillRequirements>
-				<Intellectual>6</Intellectual>
+				<Intellectual>8</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
 		
 		<costList>
-			<AnimaFiber>20</AnimaFiber>
-			<PsychoidLeaves>10</PsychoidLeaves>
-			<Gold>5</Gold>
+			<AnimaFiber>50</AnimaFiber>
+			<PsychoidLeaves>20</PsychoidLeaves>
+			<Ambrosia>2</Ambrosia>
+			<Gold>10</Gold>
 		</costList>
 		
 		<comps>
