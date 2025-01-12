@@ -15,12 +15,22 @@
 			</value>
 		</match>
 		
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+	
+		<mods>
+			<li>Elders Faction</li>
+		</mods>
+		
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/HediffDef[defName="EF_AnimaAddiction"]/stages/li/statOffsets</xpath>
 			<value>
                 <PsychicSensitivity>-0.3</PsychicSensitivity>
+				<PsychicEntropyRecoveryRate>-0.2</PsychicEntropyRecoveryRate>
 			</value>
 		</match>
 		
 	</Operation>
+	
 </Patch>
