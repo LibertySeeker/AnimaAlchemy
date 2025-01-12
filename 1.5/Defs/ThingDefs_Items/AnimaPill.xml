@@ -35,7 +35,6 @@
 			<ingestCommandString>Consume {0}</ingestCommandString>
 			<ingestReportString>Consuming {0}.</ingestReportString>
 			<outcomeDoers>
-				<li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AnimaHigh</hediffDef>
 					<severity>1.0</severity>
@@ -50,7 +49,6 @@
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
 					<offset>0.2</offset>
-				</li>
 				</li>
 			</outcomeDoers>
 		</ingestible>
