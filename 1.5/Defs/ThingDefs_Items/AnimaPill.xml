@@ -38,7 +38,7 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AnimaHigh</hediffDef>
 					<severity>1.0</severity>
-				</li>>
+				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AnimaBoost</hediffDef>
 					<severity>1.0</severity>
