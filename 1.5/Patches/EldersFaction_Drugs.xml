@@ -11,7 +11,9 @@
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/HediffDef[defName="AnimaHigh"]/stages/li/statOffsets</xpath>
 			<value>
-                <PsychicSensitivity>0.3</PsychicSensitivity>
+				<statOffsets>
+					<PsychicSensitivity>0.3</PsychicSensitivity>
+				</statOffsets>
 			</value>
 		</match>
 		
@@ -26,8 +28,10 @@
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/HediffDef[defName="EF_AnimaAddiction"]/stages/li/statOffsets</xpath>
 			<value>
-                <PsychicSensitivity>-0.3</PsychicSensitivity>
-				<PsychicEntropyRecoveryRate>-0.2</PsychicEntropyRecoveryRate>
+				<statOffsets>
+					<PsychicSensitivity>-0.3</PsychicSensitivity>
+					<PsychicEntropyRecoveryRate>-0.2</PsychicEntropyRecoveryRate>
+				</statOffsets>
 			</value>
 		</match>
 		

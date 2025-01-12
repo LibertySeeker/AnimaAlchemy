@@ -20,7 +20,7 @@
 		<stages>
 			<li>
 				<statFactors>
-					<MaxEntropy>1.2</MaxEntropy>
+					<!--<MaxEntropy>1.2</MaxEntropy>-->
 					<PsychicSensitivity>1.2</PsychicSensitivity>
 				</statFactors>
 				<statOffsets>
@@ -65,7 +65,7 @@
 		<stages>
 			<li>
 				<statFactors>
-					<MaxEntropy>1.5</MaxEntropy>
+					<!--<MaxEntropy>1.5</MaxEntropy>-->
 					<PsychicSensitivity>1.5</PsychicSensitivity>
 				</statFactors>
 				<statOffsets>
