@@ -2,25 +2,29 @@
 <Defs>
 
 	<ThingDef ParentName="MakeableDrugBase">
-		<defName>AnimaPill</defName>
-		<label>anima pill</label>
-		<description>A round pill refined from concentrated anima fiber extract. This pill contains instant digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Very useful for psycasters.</description>
+		<defName>AnimaFiberExtract</defName>
+		<label>anima fiber extract</label>
+		<description>DESCRIPTION ***************************** DESCRIPTION</description>
 		<descriptionHyperlinks>
 			<HediffDef>AnimaHigh</HediffDef>
-			<HediffDef>AnimaBoost</HediffDef>
+			<HediffDef>AnimaFiberExtractHigh</HediffDef>
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>AnimaPill</texPath>
+			<texPath>AnimaFiberExtract</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
 		<rotatable>false</rotatable>
+		<stackLimit>75</stackLimit>
 		<statBases>
 			<WorkToMake>500</WorkToMake>
-			<MarketValue>80</MarketValue>
-			<Mass>0.01</Mass>
+			<MarketValue>20</MarketValue>
+			<Mass>0.025</Mass>
+			<DeteriorationRate>1.0</DeteriorationRate>
 		</statBases>
 		<techLevel>Neolithic</techLevel>
+		<minRewardCount>10</minRewardCount>
 		<tradeTags>
 			<li>AnimaDrug</li>
 		</tradeTags>
@@ -28,28 +32,36 @@
 			<foodType>Plant, Processed</foodType>
 			<joyKind>Chemical</joyKind>
 			<joy>0.80</joy>
-			<baseIngestTicks>210</baseIngestTicks>
-			<nurseable>true</nurseable>
-			<drugCategory>Medical</drugCategory>
-			<ingestSound>Ingest_Pill</ingestSound>
+			<baseIngestTicks>150</baseIngestTicks>
+			<ingestSound>Ingest_Snort</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
-			<ingestCommandString>Take {0}</ingestCommandString>
-			<ingestReportString>Taking {0}.</ingestReportString>
+			<ingestCommandString>Snort {0}</ingestCommandString>
+			<ingestReportString>Snorting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AnimaHigh</hediffDef>
+					<hediffDef>AnimaFiberExtractHigh</hediffDef>
 					<severity>1.0</severity>
+					<toleranceChemical>EF_Anima</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AnimaBoost</hediffDef>
+					<hediffDef>EF_AnimaTolerance</hediffDef>
 					<severity>1.0</severity>
+					<toleranceChemical>EF_Anima</toleranceChemical>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>
 					<offset>0.125</offset>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-					<offset>0.2</offset>
+					<offset>0.05</offset>
 				</li>
 			</outcomeDoers>
 		</ingestible>
