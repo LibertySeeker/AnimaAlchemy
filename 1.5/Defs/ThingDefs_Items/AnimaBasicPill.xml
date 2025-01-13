@@ -6,7 +6,7 @@
 		<label>anima basic pill</label>
 		<description>A round pill refined from concentrated anima fiber extract. This pill contains instant digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Very useful for psycasters.</description>
 		<descriptionHyperlinks>
-			<HediffDef>AnimaBasicHigh</HediffDef>
+			<HediffDef>AnimaBasicPillBoost</HediffDef>
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>

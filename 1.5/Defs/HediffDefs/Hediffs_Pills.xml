@@ -33,13 +33,13 @@
 	</HediffDef>
   
     <ThoughtDef>
-		<defName>AnimaBoost</defName>
+		<defName>AnimaFiberExtractHigh</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>AnimaBoost</hediff>
+		<hediff>AnimaFiberExtractHigh</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
-				<label>consumed anima pill</label>
+				<label>consumed anima fiber extract</label>
 				<description>I feel so connected with nature and the world and full of energy.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
