@@ -80,7 +80,7 @@
 			<li Class="CompProperties_Drug">
 				<chemical>EF_Anima</chemical>
 				<addictiveness>0.01</addictiveness>
-				<minToleranceToAddict>1</minToleranceToAddict>
+				<minToleranceToAddict>0.6</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
 				<needLevelOffset>0.9</needLevelOffset>
 				<listOrder>20</listOrder>
