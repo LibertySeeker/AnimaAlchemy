@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>AnimaExtract</defName>
+		<label>anima fiber extract</label>
+		<description>a refined powdered anima fibers with high concentration.</description>
+		<descriptionHyperlinks>
+			<HediffDef>AnimaExtractHigh</HediffDef>
+			<ThingDef>AnimaFiber</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>AnimaExtract</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>35</MarketValue>
+			<Mass>0.025</Mass>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<minRewardCount>10</minRewardCount>
+		<tradeTags>
+			<li>AnimaDrug</li>
+		</tradeTags>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.80</joy>
+			<baseIngestTicks>150</baseIngestTicks>
+			<ingestSound>Ingest_Snort</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Snort {0}</ingestCommandString>
+			<ingestReportString>Snorting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AnimaExtractHigh</hediffDef>
+					<severity>1.0</severity>
+					<toleranceChemical>EF_Anima</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>EF_AnimaTolerance</hediffDef>
+					<severity>0.03</severity>
+					<toleranceChemical>EF_Anima</toleranceChemical>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.125</offset>
+					<toleranceChemical>EF_Anima</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.05</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		
+		<recipeMaker>
+			<researchPrerequisite>AnimaDrugs</researchPrerequisite>
+			<recipeUsers>
+				<li>Campfire</li>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<skillRequirements>
+				<Cooking>4</Cooking>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		
+		<costList>
+			<AnimaFiber>10</AnimaFiber>
+			<PsychoidLeaves>5</PsychoidLeaves>
+		</costList>
+		
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>EF_Anima</chemical>
+				<addictiveness>0.01</addictiveness>
+				<minToleranceToAddict>0.6</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>AnimaExtractHigh</defName>
+		<label>high on anima extract</label>
+		<labelNoun>an anima extract high</labelNoun>
+		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<!--<statFactors>
+					<PsychicSensitivity>1.2</PsychicSensitivity>
+				</statFactors>-->
+				<statOffsets>
+					<PsychicSensitivity>0.3</PsychicSensitivity>
+					<PsychicEntropyRecoveryRate>0.3</PsychicEntropyRecoveryRate>
+					<!--<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.8</VPE_PsyfocusCostFactor>-->
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+  
+    <ThoughtDef>
+		<defName>AnimaBoost</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AnimaBoost</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>consumed anima pill</label>
+				<description>I feel so connected with nature and the world and full of energy.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

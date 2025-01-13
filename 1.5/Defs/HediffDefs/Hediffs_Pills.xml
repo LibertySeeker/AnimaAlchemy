@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
-	<!--Anima Pill-->
+	<!--Anima Basic Pill-->
     <HediffDef>
-		<defName>AnimaBoost</defName>
-		<label>psychic boost from anima pill</label>
-		<labelNoun>an anima pill boost</labelNoun>
+		<defName>AnimaBasicPillBoost</defName>
+		<label>psychic boost from anima basic pill</label>
+		<labelNoun>an anima basic pill boost</labelNoun>
 		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
@@ -13,7 +13,7 @@
 		<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-2.0</severityPerDay>
+				<severityPerDay>-1.0</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 		</comps>
@@ -21,34 +21,124 @@
 			<li>
 				<statFactors>
 					<!--<MaxEntropy>1.2</MaxEntropy>-->
-					<PsychicSensitivity>1.2</PsychicSensitivity>
+					<PsychicSensitivity>1.3</PsychicSensitivity>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.95</VPE_PsyfocusCostFactor>
 				</statFactors>
 				<statOffsets>
 					<!--<PsychicSensitivity>0.1</PsychicSensitivity>-->
-					<PsychicEntropyRecoveryRate>0.4</PsychicEntropyRecoveryRate>
-					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.8</VPE_PsyfocusCostFactor>
+					<PsychicEntropyRecoveryRate>0.7</PsychicEntropyRecoveryRate>
 				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
   
     <ThoughtDef>
-		<defName>AnimaBoost</defName>
+		<defName>AnimaBasicPillBoost</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>AnimaBoost</hediff>
+		<hediff>AnimaBasicPillBoost</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
-				<label>consumed anima pill</label>
+				<label>consumed anima basic pill</label>
 				<description>I feel so connected with nature and the world and full of energy.</description>
-				<baseMoodEffect>10</baseMoodEffect>
+				<baseMoodEffect>13</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!--Anima Jade Pill-->
+    <HediffDef>
+		<defName>AnimaJadePillBoost</defName>
+		<label>psychic boost from anima jade pill</label>
+		<labelNoun>an anima jade pill boost</labelNoun>
+		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<!--<MaxEntropy>1.2</MaxEntropy>-->
+					<PsychicSensitivity>1.5</PsychicSensitivity>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.9</VPE_PsyfocusCostFactor>
+				</statFactors>
+				<statOffsets>
+					<!--<PsychicSensitivity>0.1</PsychicSensitivity>-->
+					<PsychicEntropyRecoveryRate>1.2</PsychicEntropyRecoveryRate>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+  
+    <ThoughtDef>
+		<defName>AnimaJadePillBoost</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AnimaJadePillBoost</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>consumed anima jade pill</label>
+				<description>I feel so connected with nature and the world and full of energy.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!--Anima Silver Pill-->
+    <HediffDef>
+		<defName>AnimaSilverPillBoost</defName>
+		<label>psychic boost from anima silver pill</label>
+		<labelNoun>an anima silver pill boost</labelNoun>
+		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<!--<MaxEntropy>1.2</MaxEntropy>-->
+					<PsychicSensitivity>1.8</PsychicSensitivity>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.85</VPE_PsyfocusCostFactor>
+				</statFactors>
+				<statOffsets>
+					<!--<PsychicSensitivity>0.1</PsychicSensitivity>-->
+					<PsychicEntropyRecoveryRate>1.8</PsychicEntropyRecoveryRate>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+  
+    <ThoughtDef>
+		<defName>AnimaSilverPillBoost</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AnimaSilverPillBoost</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>consumed anima silver pill</label>
+				<description>I feel one with nature and the world. I can do anything!</description>
+				<baseMoodEffect>18</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
 
 	<!--Anima Golden Pill-->
 	<HediffDef>
-		<defName>AnimaGoldenBoost</defName>
+		<defName>AnimaGoldenPillBoost</defName>
 		<label>psychic boost from golden anima pill</label>
 		<labelNoun>an anima golden pill boost</labelNoun>
 		<description>Active pure anima energy in body and mind. Regenerates half the Psyfocus and boosts other psychic attributes.</description>
@@ -58,7 +148,7 @@
 		<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-2.0</severityPerDay>
+				<severityPerDay>-1.0</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 		</comps>
@@ -66,27 +156,27 @@
 			<li>
 				<statFactors>
 					<!--<MaxEntropy>1.5</MaxEntropy>-->
-					<PsychicSensitivity>1.5</PsychicSensitivity>
+					<PsychicSensitivity>2.0</PsychicSensitivity>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.8</VPE_PsyfocusCostFactor>
 				</statFactors>
 				<statOffsets>
 					<!--<PsychicSensitivity>0.5</PsychicSensitivity>-->
-					<PsychicEntropyRecoveryRate>0.8</PsychicEntropyRecoveryRate>
-					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.5</VPE_PsyfocusCostFactor>
+					<PsychicEntropyRecoveryRate>3.0</PsychicEntropyRecoveryRate>
 				</statOffsets>
 			</li>
 		 </stages>
 	</HediffDef>
   
     <ThoughtDef>
-		<defName>AnimaGoldenBoost</defName>
+		<defName>AnimaGoldenPillBoost</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>AnimaGoldenBoost</hediff>
+		<hediff>AnimaGoldenPillBoost</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
 				<label>consumed golden anima pill</label>
 				<description>I feel one with nature and the world. I can do anything!</description>
-				<baseMoodEffect>15</baseMoodEffect>
+				<baseMoodEffect>20</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

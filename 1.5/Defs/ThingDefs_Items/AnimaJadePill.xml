@@ -2,21 +2,21 @@
 <Defs>
 
 	<ThingDef ParentName="MakeableDrugBase">
-		<defName>AnimaGoldenPill</defName>
-		<label>anima golden pill</label>
-		<description>A round pill refined from concentrated anima fiber extract. This pill contains instant digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Stabilized and enhanced by gold flakes. Very useful for psycasters.</description>
+		<defName>AnimaJadePill</defName>
+		<label>anima jade pill</label>
+		<description>A round pill refined from concentrated anima fiber extract. This pill contains instant digestible psychic energy which replenishes a portion of depleted psychic focus as well as provides mental relaxation to help dissipate neural heat and hightens psychic sensisitivity. Stabilized with crushed jade. Very useful for psycasters.</description>
 		<descriptionHyperlinks>
-			<HediffDef>AnimaGoldenPillBoost</HediffDef>
+			<HediffDef>AnimaJadePillBoost</HediffDef>
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>AnimaGoldenPill</texPath>
+			<texPath>AnimaJadePill</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<statBases>
-			<WorkToMake>900</WorkToMake>
-			<MarketValue>250</MarketValue>
+			<WorkToMake>700</WorkToMake>
+			<MarketValue>80</MarketValue>
 			<Mass>0.01</Mass>
 		</statBases>
 		<techLevel>Neolithic</techLevel>
@@ -35,13 +35,13 @@
 			<ingestReportString>Taking {0}.</ingestReportString>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AnimaGoldenPillBoost</hediffDef>
-					<severity>0.75</severity>
+					<hediffDef>AnimaJadePillBoost</hediffDef>
+					<severity>0.5</severity>
 					<toleranceChemical>EF_Anima</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>EF_AnimaTolerance</hediffDef>
-					<severity>0.02</severity>
+					<severity>0.03</severity>
 					<toleranceChemical>EF_Anima</toleranceChemical>
 					<divideByBodySize>true</divideByBodySize>
 					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
@@ -52,7 +52,7 @@
 					<toleranceChemical>EF_Anima</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-					<offset>0.15</offset>
+					<offset>0.25</offset>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -67,15 +67,15 @@
 			</recipeUsers>
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 			<skillRequirements>
-				<Cooking>8</Cooking>
-				<Intellectual>12</Intellectual>
+				<Cooking>6</Cooking>
+				<Intellectual>8</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
 		
 		<costList>
-			<AnimaExtract>3</AnimaExtract>
-			<PsychoidLeaves>10</PsychoidLeaves>
-			<Gold>2</Gold>
+			<AnimaExtract>1</AnimaExtract>
+			<PsychoidLeaves>2</PsychoidLeaves>
+			<Jade>2</Jade>
 		</costList>
 		
 		<comps>

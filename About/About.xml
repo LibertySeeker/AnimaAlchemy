@@ -19,9 +19,16 @@
 			<displayName>AnimaGear</displayName>
 			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2215217049</downloadUrl>
 		</li>
+		<!--
 		<li>
 			<packageId>xrushha.EldersFaction</packageId>
 			<displayName>Elders Faction</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2282867140</downloadUrl>
+		
+		</li>-->
+		<li>
+			<packageId>TM3.EldersFactionRevisited</packageId>
+			<displayName>Elders Faction (Revisited)</displayName>
 			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2282867140</downloadUrl>
 		
 		</li>
