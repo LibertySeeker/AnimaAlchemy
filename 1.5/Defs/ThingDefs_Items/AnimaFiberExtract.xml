@@ -100,47 +100,4 @@
 		
 	</ThingDef>
 	
-	<HediffDef>
-		<defName>AnimaFiberExtractHigh</defName>
-		<label>high on anima extract</label>
-		<labelNoun>an anima fiber extract high</labelNoun>
-		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>
-		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-2.0</severityPerDay>
-				<showHoursToRecover>true</showHoursToRecover>
-			</li>
-		</comps>
-		<stages>
-			<li>
-				<!--<statFactors>
-					<PsychicSensitivity>1.2</PsychicSensitivity>
-				</statFactors>-->
-				<statOffsets>
-					<PsychicSensitivity>0.3</PsychicSensitivity>
-					<PsychicEntropyRecoveryRate>0.3</PsychicEntropyRecoveryRate>
-					<!--<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.8</VPE_PsyfocusCostFactor>-->
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
-  
-    <ThoughtDef>
-		<defName>AnimaFiberExtractHigh</defName>
-		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>AnimaBoost</hediff>
-		<validWhileDespawned>true</validWhileDespawned>
-		<stages>
-			<li>
-				<label>consumed anima pill</label>
-				<description>I feel so connected with nature and the world and full of energy.</description>
-				<baseMoodEffect>10</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
-	
 </Defs>
