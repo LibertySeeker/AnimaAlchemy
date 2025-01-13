@@ -39,7 +39,7 @@
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
-				<label>consumed anima fiber extract</label>
+				<label>snorted anima fiber extract</label>
 				<description>I feel so connected with nature and the world and full of energy.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>

@@ -10,7 +10,7 @@
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>AnimaExtract</texPath>
+			<texPath>AnimaFiberExtract</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<healthAffectsPrice>false</healthAffectsPrice>
