@@ -91,4 +91,48 @@
 		
 	</ThingDef>
 
+	<HediffDef>
+		<defName>AnimaSilverPillBoost</defName>
+		<label>psychic boost from anima silver pill</label>
+		<labelNoun>an anima silver pill boost</labelNoun>
+		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<!--<MaxEntropy>1.2</MaxEntropy>-->
+					<PsychicSensitivity>1.8</PsychicSensitivity>
+				</statFactors>
+				<statOffsets>
+					<!--<PsychicSensitivity>0.1</PsychicSensitivity>-->
+					<PsychicEntropyRecoveryRate>1.8</PsychicEntropyRecoveryRate>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.85</VPE_PsyfocusCostFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+  
+    <ThoughtDef>
+		<defName>AnimaSilverPillBoost</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AnimaSilverPillBoost</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>consumed anima silver pill</label>
+				<description>I feel one with nature and the world. I can do anything!</description>
+				<baseMoodEffect>18</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
 </Defs>
