@@ -30,6 +30,7 @@
 			<baseIngestTicks>210</baseIngestTicks>
 			<nurseable>true</nurseable>
 			<drugCategory>Medical</drugCategory>
+			<ingestSound>Ingest_Pill</ingestSound>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
 			<ingestCommandString>Take {0}</ingestCommandString>
 			<ingestReportString>Taking {0}.</ingestReportString>
