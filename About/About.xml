@@ -29,13 +29,14 @@
 		<li>
 			<packageId>TM3.EldersFactionRevisited</packageId>
 			<displayName>Elders Faction (Revisited)</displayName>
-			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2282867140</downloadUrl>
+			<!--<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2282867140</downloadUrl>-->
 		
 		</li>
     	</modDependencies>
 	<loadAfter>
 		<li>xrushha.AnimaGear</li>
-		<li>xrushha.EldersFaction</li>
+		<!--<li>xrushha.EldersFaction</li>-->
+		<li>TM3.EldersFactionRevisited</li>
 		<li>VanillaExpanded.VPsycastsE</li>
 	</loadAfter>
 	<packageId>TM3.AnimaAlchemy</packageId>
