@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="MakeableDrugBase">
-		<defName>AnimaExtract</defName>
+		<defName>AnimaFiberExtract</defName>
 		<label>anima fiber extract</label>
 		<description>a refined powdered anima fibers with high concentration.</description>
 		<descriptionHyperlinks>
-			<HediffDef>AnimaExtractHigh</HediffDef>
+			<HediffDef>AnimaFiberExtractHigh</HediffDef>
 			<ThingDef>AnimaFiber</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
@@ -44,7 +44,7 @@
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AnimaExtractHigh</hediffDef>
+					<hediffDef>AnimaFiberExtractHigh</hediffDef>
 					<severity>1.0</severity>
 					<toleranceChemical>EF_Anima</toleranceChemical>
 				</li>
@@ -101,9 +101,9 @@
 	</ThingDef>
 	
 	<HediffDef>
-		<defName>AnimaExtractHigh</defName>
+		<defName>AnimaFiberExtractHigh</defName>
 		<label>high on anima extract</label>
-		<labelNoun>an anima extract high</labelNoun>
+		<labelNoun>an anima fiber extract high</labelNoun>
 		<description>Active anima extract in the bloodstream. Regenerates Psyfocus among other mild psychic benefits.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
@@ -130,7 +130,7 @@
 	</HediffDef>
   
     <ThoughtDef>
-		<defName>AnimaBoost</defName>
+		<defName>AnimaFiberExtractHigh</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>AnimaBoost</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
