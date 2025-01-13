@@ -45,7 +45,7 @@
 					<severity>0.02</severity>
 					<toleranceChemical>EF_Anima</toleranceChemical>
 					<divideByBodySize>true</divideByBodySize>
-					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+					<!--<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>-->
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>
