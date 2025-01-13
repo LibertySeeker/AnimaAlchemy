@@ -112,7 +112,7 @@
 				</statFactors>
 				<statOffsets>
 					<!--<PsychicSensitivity>0.5</PsychicSensitivity>-->
-					<PsychicEntropyRecoveryRate>3.0</PsychicEntropyRecoveryRate>
+					<PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
 					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">-0.2</VPE_PsyfocusCostFactor>
 				</statOffsets>
 			</li>
