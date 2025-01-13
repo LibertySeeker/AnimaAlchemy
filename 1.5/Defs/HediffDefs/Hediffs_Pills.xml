@@ -67,11 +67,11 @@
 				<statFactors>
 					<!--<MaxEntropy>1.2</MaxEntropy>-->
 					<PsychicSensitivity>1.3</PsychicSensitivity>
-					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.95</VPE_PsyfocusCostFactor>
 				</statFactors>
 				<statOffsets>
 					<!--<PsychicSensitivity>0.1</PsychicSensitivity>-->
 					<PsychicEntropyRecoveryRate>0.7</PsychicEntropyRecoveryRate>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.95</VPE_PsyfocusCostFactor>
 				</statOffsets>
 			</li>
 		</stages>
@@ -112,11 +112,11 @@
 				<statFactors>
 					<!--<MaxEntropy>1.2</MaxEntropy>-->
 					<PsychicSensitivity>1.5</PsychicSensitivity>
-					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.9</VPE_PsyfocusCostFactor>
 				</statFactors>
 				<statOffsets>
 					<!--<PsychicSensitivity>0.1</PsychicSensitivity>-->
 					<PsychicEntropyRecoveryRate>1.2</PsychicEntropyRecoveryRate>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.9</VPE_PsyfocusCostFactor>
 				</statOffsets>
 			</li>
 		</stages>
@@ -157,11 +157,11 @@
 				<statFactors>
 					<!--<MaxEntropy>1.2</MaxEntropy>-->
 					<PsychicSensitivity>1.8</PsychicSensitivity>
-					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.85</VPE_PsyfocusCostFactor>
 				</statFactors>
 				<statOffsets>
 					<!--<PsychicSensitivity>0.1</PsychicSensitivity>-->
 					<PsychicEntropyRecoveryRate>1.8</PsychicEntropyRecoveryRate>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.85</VPE_PsyfocusCostFactor>
 				</statOffsets>
 			</li>
 		</stages>
@@ -202,11 +202,11 @@
 				<statFactors>
 					<!--<MaxEntropy>1.5</MaxEntropy>-->
 					<PsychicSensitivity>2.0</PsychicSensitivity>
-					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.8</VPE_PsyfocusCostFactor>
 				</statFactors>
 				<statOffsets>
 					<!--<PsychicSensitivity>0.5</PsychicSensitivity>-->
 					<PsychicEntropyRecoveryRate>3.0</PsychicEntropyRecoveryRate>
+					<VPE_PsyfocusCostFactor MayRequire="VanillaExpanded.VPsycastsE">0.8</VPE_PsyfocusCostFactor>
 				</statOffsets>
 			</li>
 		 </stages>
