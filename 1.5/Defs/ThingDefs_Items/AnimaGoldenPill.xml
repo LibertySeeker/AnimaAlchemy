@@ -71,7 +71,7 @@
 		</recipeMaker>
 		
 		<costList>
-			<AnimaExtract>3</AnimaExtract>
+			<AnimaFiberExtract>3</AnimaFiberExtract>
 			<PsychoidLeaves>10</PsychoidLeaves>
 			<Gold>2</Gold>
 		</costList>
