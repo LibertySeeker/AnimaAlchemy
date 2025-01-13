@@ -58,7 +58,6 @@
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Rest</need>
 					<offset>0.125</offset>
-					<toleranceChemical>EF_Anima</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
 					<offset>0.05</offset>
