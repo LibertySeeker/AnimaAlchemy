@@ -68,7 +68,6 @@
 			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 			<skillRequirements>
 				<Cooking>8</Cooking>
-				<Intellectual>12</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
 		

@@ -78,7 +78,6 @@
 			<workSkill>Cooking</workSkill>
 			<skillRequirements>
 				<Cooking>4</Cooking>
-				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
 		
